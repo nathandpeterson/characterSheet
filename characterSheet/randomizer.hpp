@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int getRandom(int max, int offset);
+
 #endif /* randomizer_hpp */

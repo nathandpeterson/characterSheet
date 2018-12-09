@@ -10,11 +10,11 @@
 #include <cstdlib>
 #include <time.h>
 
-int getRandom(int max)
+int getRandom(int max, int offset)
 {
     int randomNumber;
     // Add a seed value for the randomizer.
-    srand( static_cast<unsigned int> (time(NULL)));
+    srand( static_cast<unsigned int> (time(NULL) + offset));
     randomNumber = rand() % max + 1;
     return randomNumber;
 }
